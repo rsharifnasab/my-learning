@@ -1,0 +1,1 @@
+data BoolType = False | True

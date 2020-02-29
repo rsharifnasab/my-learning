@@ -1,0 +1,6 @@
+*.class
+*.exe
+*.out
+/uploads
+*.o
+*.hi

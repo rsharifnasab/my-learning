@@ -1,0 +1,4 @@
+ipman (for battry!)
+paint
+sdl
+
