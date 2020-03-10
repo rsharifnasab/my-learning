@@ -13,3 +13,5 @@ I'm reading book: **haskell for principles**
 + https://lexi-lambda.github.io/learning-haskell/
 + http://www.happylearnhaskelltutorial.com/contents.html
 + https://jeoygin.gitbooks.io/learn-y-in-x-minutes/content/haskell.html
+
++ [grokking-functional-programming](https://livebook.manning.com/book/grokking-functional-programming/chapter-1/v-6/)
