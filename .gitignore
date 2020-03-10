@@ -4,3 +4,5 @@
 /uploads
 *.o
 *.hi
+target/
+scala/*/target/
