@@ -1,4 +1,4 @@
-# memory model of java 
+# memory model of Java 
 
 as you know, computer memory have 2 parts: stack and heap
 
@@ -72,3 +72,29 @@ as you know, computer memory have 2 parts: stack and heap
 + in Java we have `call by value of reference`, it means we can pass reference of an Object by value. the callee method can change properties of Object but cannot change Object totally. (the identity is kept but state can change) read [this article](http://www.javadude.com/articles/passbyvalue.htm)
 + this mean we can't have a normal swap method in Java. ([here we have a dirty idea](https://stackoverflow.com/questions/3624525/how-to-write-a-basic-swap-function-in-java))
 + consider the example in `Swap.java` and `Modify.java`
+
+
+
+
+
+## and arrays?
+
++ syntax of Java arrays is found on [internet!](https://www.w3schools.com/java/java_arrays.asp)
+
++ an array is an Object too, it should be instanced.
+
++ when we write: `String[] arr` we only have an reference
+
++ after that we initialize like `arr = new String [10]`, now we have **array of nulls**
+
++ although we initialized the array but its references doesn't point to a valid String (in our example)
+
++ if we want to use any element of array, we should initialize that separately. for example 
+
+  ```java
+  arr[0] = new String("this is initialization")
+  ```
+
+  
+
+  
