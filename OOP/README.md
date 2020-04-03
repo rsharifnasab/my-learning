@@ -1,4 +1,4 @@
-# learning OOP with java
+# learning OOP with Java
 
 in this folder we want to learn concepts of Object Oriented Programming with Java, together
 
@@ -8,7 +8,7 @@ there are many programming paradigms..
 
 ## programming paradigms 
 
-1.  Procedural 
+1.  Procedural Programming
       + codes are in procedures (routines or functions)
       + data are in variables (int, char, ..)
       + execution of program is calling procedures and modifying variables
@@ -16,7 +16,7 @@ there are many programming paradigms..
 
    
 
-2. Object Oriented 
+2. Object Oriented Programming
 
    + codes are in methods
 
@@ -68,14 +68,15 @@ there are many programming paradigms..
 
 
 
-# OOP Features
+# [OOP Features](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
 
 + Abstraction 
-
 + Encapsulation
-
 + Inheritance
++ Polymorphism
 
-+ Poly-Morphism
 
-  
+
+
+
+### my learning resource: [javacup videos](https://javacup.ir/javacup-training-videos/)
