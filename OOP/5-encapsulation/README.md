@@ -30,7 +30,7 @@ public class Employee {
 } // source: https://medium.com/@cancerian0684/what-are-four-basic-principles-of-object-oriented-programming-645af8b43727
 ```
 
-+ this encapsulation isn't a limitation for the user of our class 
++ this encapsulation isn't a limitation for our class's user
 + for example we we restrict access to the name, directly, it isn't a limitation, it is just decreasing chance of bad usage. 
 + all of our class features are public and available via public methods, we just hide and private implementation details that is not necessary for user
 + for example when you buy a mouse, you don't need (and have) to open it and change wiring,  you just need to use it with available button (interface)

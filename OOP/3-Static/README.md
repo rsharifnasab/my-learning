@@ -8,13 +8,13 @@ The two types of static members are static fields and static methods:
 
 + **static field**: A field that’s declared with the static keyword, like this:
 
-  ```
+  ```java
   private static int ballCount;
   ```
 
   The position of the static keyword is interchangeable with the positions of the *visibility keywords* (private and public, as well as protected). As a result, the following statement works, too:
 
-  ```
+  ```java
   static private int ballCount;
   ```
 

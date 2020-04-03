@@ -1,6 +1,6 @@
 # learning OOP with Java
 
-in this folder we want to learn concepts of Object Oriented Programming with Java, together
+here we want to learn concepts of Object Oriented Programming with Java together
 
 
 
@@ -64,18 +64,14 @@ there are many programming paradigms..
 + why object is different from the other
 + `equals` method
 
-
-
-
-
-# [OOP Features](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
+# OOP principles
 
 + Abstraction 
 + Encapsulation
 + Inheritance
 + Polymorphism
 
-
+further reading: [this link](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
 
 
 

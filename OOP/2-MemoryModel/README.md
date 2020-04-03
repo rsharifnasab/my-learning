@@ -1,6 +1,6 @@
 # memory model of Java 
 
-as you know, computer memory have 2 parts: stack and heap
+as you know, computer memory have 2 parts: **stack** and **heap**
 
 ### stack 
 
@@ -12,24 +12,24 @@ as you know, computer memory have 2 parts: stack and heap
 
 + information of current running function and which function called this (and where to return)
 
-+ automatically cleared after ending method
++ automatically cleared after the function ended
 
   
 
 ### heap
 
 + slower than stack 
-+ have much space ( 4 GB<  based on system)
-+ doesn't clear automatically
++ have more space ( 4 GB<  based on your computer system)
++ doesn't cleared automatically
 
 
 
 ### recall: pointers
 
 + don't worry, Java doesn't support pointers
-+ pointer is a variable that save address of something in memory 
++ pointers are variables that save an address in memory 
 + pointer maybe `valid`, `null`, `dangling` or `wild`
-+ memory allocation and free in C/C++ is hard
++ memory allocation and deallocation (free) in C/C++ is hard
 
 
 
@@ -60,7 +60,7 @@ as you know, computer memory have 2 parts: stack and heap
 
 + references in declaration, points to `null` (so we don't have wild pointers)
 
-+ there is no `free()` option in Java, everything is done by Garbage Collector (so we don't have Dangling Pointers too)
++ there is no `free()` option in Java, everything is done by **Garbage Collector** (so we don't have Dangling Pointers too)
 
 
 
