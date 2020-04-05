@@ -22,7 +22,7 @@ as you know, computer memory have 2 parts: **stack** and **heap**
 + have more space ( 4 GB<  based on your computer system)
 + doesn't cleared automatically
 
-![The Java Memory Model showing references from local variables to objects, and from object to other objects.](http://tutorials.jenkov.com/images/java-concurrency/java-memory-model-3.png)
+
 
 ### recall: pointers
 
@@ -35,9 +35,9 @@ as you know, computer memory have 2 parts: **stack** and **heap**
 
 ## what about Java?
 
-+ Java don't have pointers
++ Java doesn't have pointers
 
-+ references are replaces pointers
++ references replace pointers
 
 + there isn't much difference about the way they works
 
@@ -50,7 +50,7 @@ as you know, computer memory have 2 parts: **stack** and **heap**
 + in Deceleration: we declare references:
 
   ```java
-  Integer i;
+  String s1;
   Student s;
   ```
 
@@ -61,6 +61,8 @@ as you know, computer memory have 2 parts: **stack** and **heap**
 + references in declaration, points to `null` (so we don't have wild pointers)
 
 + there is no `free()` option in Java, everything is done by **Garbage Collector** (so we don't have Dangling Pointers too)
+
+![The Java Memory Model showing references from local variables to objects, and from object to other objects.](http://tutorials.jenkov.com/images/java-concurrency/java-memory-model-3.png)
 
 
 
@@ -75,19 +77,23 @@ as you know, computer memory have 2 parts: **stack** and **heap**
 
 
 
-
-
 ## and arrays?
 
 + syntax of Java arrays is found on [internet!](https://www.w3schools.com/java/java_arrays.asp)
 
 + an array is an Object too, it should be instanced.
 
-+ when we write: `String[] arr` we only have an reference
++ when we write below code, we only have a reference
+```java
+String[] arr;
+```
 
-+ after that we initialize like `arr = new String [10]`, now we have **array of nulls**
++ after that we initialize, we have **array of nulls**
+```java
+arr = new String [10]
+```
 
-+ although we initialized the array but its references doesn't point to a valid String (in our example)
++ although we initialized the array but its references doesn't point to a valid Object (String in our example)
 
 + if we want to use any element of array, we should initialize that separately. for example 
 

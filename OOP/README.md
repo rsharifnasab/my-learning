@@ -22,7 +22,7 @@ there are many programming paradigms..
 
    + data are in fields
 
-   + execution of program is message passing between Objects
+   + execution of program is [message passing](https://programmingwords.com/home/message-passing) between Objects
 
    + we learn in **AP** course
 

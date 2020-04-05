@@ -14,11 +14,11 @@ class Player{
 	public Player(String name){
 		this.name = name;
 	}
-	
+
 }
 
 public class ThisTest{
 	public static void main(String[] args){
-		
-	}	
+
+	}
 }
