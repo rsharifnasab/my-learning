@@ -22,7 +22,7 @@ as you know, computer memory have 2 parts: **stack** and **heap**
 + have more space ( 4 GB<  based on your computer system)
 + doesn't cleared automatically
 
-
+![The Java Memory Model showing references from local variables to objects, and from object to other objects.](http://tutorials.jenkov.com/images/java-concurrency/java-memory-model-3.png)
 
 ### recall: pointers
 
