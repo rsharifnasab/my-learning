@@ -16,3 +16,18 @@ further read: [this link](https://javacup.ir/java8-streamapi/)
 
 
 
+
+functional interface
+lambda
+sort 
+filter 
+stream 
+map 
+collector 
+
+terminal, non terminal 
+for each 
+any 
+findAny?
+lazy evaluation 
+new switch case
