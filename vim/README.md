@@ -32,4 +32,7 @@ there are few good links:
 
     
 
-  
++ work with tabs 
+  + [this link](https://www.linux.com/training-tutorials/vim-tips-using-tabs/)
+
++ use as an ide [this link](https://vim.fandom.com/wiki/Use_Vim_like_an_IDE)
