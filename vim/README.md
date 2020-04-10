@@ -36,3 +36,4 @@ there are few good links:
   + [this link](https://www.linux.com/training-tutorials/vim-tips-using-tabs/)
 
 + use as an ide [this link](https://vim.fandom.com/wiki/Use_Vim_like_an_IDE)
++ [web develpment in vim](https://medium.com/@caleb89taylor/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2)
