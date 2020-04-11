@@ -27,6 +27,11 @@ there are few good links:
   + [this](https://www.tutorialdocs.com/article/vim-configuration.html)
 
   + [this automatic generator](https://vim-bootstrap.com/)
+  
+ + online tutorials
+    + [this link](https://vim-adventures.com/)
+    + [and this link](http://www.vimgenius.com/)
+    + and [this](https://www.openvim.com/)
 
   + [and this blog](https://blog.hellojs.org/configure-vim-from-scratch-efe5cbc1c563)
 
