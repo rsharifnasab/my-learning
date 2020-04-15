@@ -29,15 +29,19 @@ public class Employee{
     public String getName() {
         return this.name;
     }
-     
+///////////////////////////////////////////////////
+
+
+
     public static void main(String[] args) {
+   
         List<Employee> employees = Arrays.asList(
                 new Employee("naghi",22,true),
                 new Employee("ali",10,false),
                 new Employee("taghi",20,false),
-                new Employee("param",30,true)
-                );
-        
+                new Employee("parham",30,true)
+            );
+
 
         // we want to calculate minumum salary of employees
         // that are married
@@ -51,14 +55,28 @@ public class Employee{
 
         // java 8 way: 
         int min8 = employees.stream()
-            .filter(a -> a.married())
-            .mapToInt( e -> e.getSalary() )
+            .filter( a -> a.married() )
+            .mapToInt( e -> e.getSalary() ) // convert object stream to int stream
             .min()
-            .getAsInt();
-        
+            .getAsInt(); // optional?
 
         System.out.println(min7);
         System.out.println(min8);
+
+        System.out.println("*****************");
+
+
+        System.out.println("enter employee name");
+        String name = new Scanner(System.in).next();
+
+        Employee found = employees.stream()
+            .filter(a -> a.getName().equals(name))
+            .findAny()
+            .orElse(null); // optional
+        System.out.println(found);
     } 
 
 }
+
+// terminal operation 
+// intermediate operation 

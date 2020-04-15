@@ -62,7 +62,7 @@ public class IntTest {
             .map(i -> random.nextInt() )
             .reduce( (a,b) -> a<b ? a : b ) // return optional
             .getAsInt();
-    
+        System.out.println("some random integer : "+randomMin);
 
     }
 }
