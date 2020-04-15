@@ -6,28 +6,49 @@ but in 2014, oracle released Java 8, biggest Java update ever, even more than Ja
 
 Java has some LTS (stands for Long Term Support) versions, they are supported more, Java 8 and Java 11 are latest LTS versions but actually Java 8 reached nearly end of life.
 
-## why Java 8 is so important?
+## why Java 8 is important?
 
 why we don't introduce Java 9? or Java 11? it is LTS too!
 
-after Java 8, Java migrated from a pure OO language to multi-paradigm language. most important change is adding stream api.
+after Java 8, Java changed from a pure OO language to multi-paradigm language.
 
 further read: [this link](https://javacup.ir/java8-streamapi/)
 
 
 
+## Table of contents
+1. default method in interface
+1. functional interface 
+1. lambda, method refrence
+1. Stream api 
+1. Optional
+1. IntStream 
 
-functional interface
-lambda
-sort 
-filter 
-stream 
-map 
-collector 
 
-terminal, non terminal 
-for each 
-any 
-findAny?
-lazy evaluation 
-new switch case
+
+#### stream operations 
++ non terminal 
+  + map 
+  + filter 
+  + sort 
+
++ terminal
+  + count
+  + forEach
+
+  + findAny
+  + findFirst
+
+  + reduce 
+  + collect 
+  + toArray 
+
+  + anyMatch 
+  + allMatch 
+  + noneMatch 
+
+
+### extra:
+  + lazy evaluation 
+  + new switch case
+
