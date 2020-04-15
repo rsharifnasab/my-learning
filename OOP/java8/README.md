@@ -12,17 +12,13 @@ why we don't introduce Java 9? or Java 11? it is LTS too!
 
 after Java 8, Java changed from a pure OO language to multi-paradigm language.
 
-further read: [this link](https://javacup.ir/java8-streamapi/)
-
-
-
 ## Table of contents
 1. default method in interface
 1. functional interface 
-1. lambda, method refrence
-1. Stream api 
-1. Optional
-1. IntStream 
+1. lambda, method reference
+1. IntStream
+1. Stream API 
+1. Optional 
 
 
 
