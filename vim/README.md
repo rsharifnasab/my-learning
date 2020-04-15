@@ -42,3 +42,4 @@ there are few good links:
 
 + use as an ide [this link](https://vim.fandom.com/wiki/Use_Vim_like_an_IDE)
 + [web develpment in vim](https://medium.com/@caleb89taylor/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2)
++ [come cheetsheet](https://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm)

@@ -11,4 +11,4 @@ functional interface is an interface that:
 
 
 
-further reading [this link](https://www.geeksforgeeks.org/functional-interfaces-java/)
+further reading [this link](https://www.geeksforgeeks.org/functional-interfaces-java/) and [this link](https://www.baeldung.com/java-8-functional-interfaces)
