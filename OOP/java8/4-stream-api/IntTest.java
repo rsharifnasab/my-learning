@@ -1,5 +1,4 @@
 import java.util.*;
-
 import java.util.stream.*;
 
 public class IntTest {
@@ -23,7 +22,6 @@ public class IntTest {
 
 
 
-
         System.out.println("********************************");
         
         System.out.println("adad e avval 1 ta 20");
@@ -42,6 +40,10 @@ public class IntTest {
             .map( i -> 2*i )
             .toArray();
         System.out.println("arr[0] : " + zoj1to10[0]);
+        System.out.println(
+                Arrays.toString(zoj1to10)
+                );
+
 
         System.out.println("********************************");
         Scanner sc = new Scanner(System.in);
@@ -52,10 +54,19 @@ public class IntTest {
             .toArray();
 
         Arrays.stream(arr).forEach(i -> System.out.println(i));
+
+
+        System.out.println("********************************");
+        Random random = new Random();
+        int randomMin = IntStream.rangeClosed(1,10)
+            .map(i -> random.nextInt() )
+            .reduce( (a,b) -> a<b ? a : b ) // return optional
+            .getAsInt();
+    
+
     }
 }
 
-//redude 
-// box 
+// boxed 
 // allMatch
 // noneMatch
