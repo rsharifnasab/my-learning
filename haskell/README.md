@@ -15,3 +15,4 @@ I'm reading book: **haskell for principles**
 + https://jeoygin.gitbooks.io/learn-y-in-x-minutes/content/haskell.html
 
 + [grokking-functional-programming](https://livebook.manning.com/book/grokking-functional-programming/chapter-1/v-6/)
++ [FP complete](https://tech.fpcomplete.com/haskell/learn)
