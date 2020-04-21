@@ -15,9 +15,9 @@ public class IntTest {
 
         System.out.println("tedad adad e zoj e 1-10");
         long tedadZoj = IntStream.rangeClosed(1,10)
-             
             .filter(a -> a%2 == 0)
             .count();
+
         System.out.println(tedadZoj);
 
 
@@ -42,14 +42,14 @@ public class IntTest {
         System.out.println("arr[0] : " + zoj1to10[0]);
         System.out.println(
                 Arrays.toString(zoj1to10)
-                );
+             );
 
 
         System.out.println("********************************");
         Scanner sc = new Scanner(System.in);
         String line = sc.nextLine();
-
-        int [] arr = Arrays.stream( line.trim().split(" ") )
+        String[] input_arr =  line.trim().split(" ");
+        int [] arr = Arrays.stream(input_arr)
             .mapToInt( a -> Integer.parseInt(a) )
             .toArray();
 
