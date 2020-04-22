@@ -1,5 +1,12 @@
 import java.util.*;
+import java.util.function.*;
 
+class Some {
+    String someFunc(Function<String,String> a, String b){
+        return a.apply(b);
+    }
+    
+}
 public class Employee{
     String name;
     int salary;
@@ -50,15 +57,17 @@ public class Employee{
         for ( Employee e : employees ) {
             if(!e.married()) continue;
             if (min7 > e.getSalary()) min7 = e.getSalary();
+            
         }
-
+                                    
 
         // java 8 way: 
-        int min8 = employees.stream()
+        int min8 = 
+            employees.stream()
             .filter( a -> a.married() )
             .mapToInt( e -> e.getSalary() ) // convert object stream to int stream
-            .min()
-            .getAsInt(); // optional?
+            .min()  // optional 
+            .getAsInt(); // {int} , {  }
 
         System.out.println(min7);
         System.out.println(min8);
@@ -71,9 +80,9 @@ public class Employee{
 
         Employee found = employees.stream()
             .filter(a -> a.getName().equals(name))
-            .findAny()
-            .orElse(null); // optional
-        System.out.println(found);
+            .findAny() // optional 
+            .orElse(null); 
+        System.out.println(found);     
     } 
 
 }

@@ -1,13 +1,12 @@
-import java.util.function.*;
-
 public class UtilFunctions {
     public static void main(String[] args) {
-        
+
 
         Predicate<String> salamHast = (a) -> a.equals("salam");
-        if( salamHast.test("some other string") ) 
+
+        if( salamHast.test("some other string") )
             System.out.println("test mosbat");
-        
+
         if( salamHast.negate().test("another string") )
             System.out.println("test manfi");
 

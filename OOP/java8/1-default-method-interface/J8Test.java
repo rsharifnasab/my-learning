@@ -1,7 +1,9 @@
 import java.time.*;
 
 interface Java8Interface {
+
     boolean todayIsSaturday();
+
     default boolean todayIsNotSaturday(){
        return ! todayIsSaturday();
     }

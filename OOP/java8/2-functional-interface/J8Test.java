@@ -1,7 +1,7 @@
 import java.time.*;
 
 @FunctionalInterface
-interface Java8Interface { 
+interface Java8Interface {
 
 
     boolean todayIsSaturday();
@@ -21,14 +21,10 @@ public class J8Test {
 
 
         Java8Interface j8i = () ->  LocalDate.now().getDayOfWeek() == DayOfWeek.SATURDAY;
-         // define the only method while instancing
-
+        // define the only method while instancing
         System.out.println(j8i.todayIsSaturday());
         System.out.println(j8i.todayIsNotSaturday());
-    }                                        
+    }
 
 
 }
-
-
-
