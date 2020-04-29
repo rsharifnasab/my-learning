@@ -14,3 +14,6 @@
 + [this weblog](https://medium.com/quick-code/top-tutorials-to-learn-shell-scripting-on-linux-platform-c250f375e0e5)
 
 + [this website](http://robertmuth.blogspot.com/2012/08/better-bash-scripting-in-15-minutes.html)
+
+
++ [explain shell commands](https://explainshell.com/)
