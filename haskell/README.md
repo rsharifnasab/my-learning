@@ -16,3 +16,4 @@ I'm reading book: **haskell for principles**
 
 + [grokking-functional-programming](https://livebook.manning.com/book/grokking-functional-programming/chapter-1/v-6/)
 + [FP complete](https://tech.fpcomplete.com/haskell/learn)
++ [some cheatsheet (actually refrence card) in haskell website](https://wiki.haskell.org/Reference_cardi)
