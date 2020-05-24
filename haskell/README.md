@@ -1,6 +1,6 @@
 # steps to learn haskell 
 I'm reading book: **haskell for principles**
-+ the persian version of book : https://haskellbook.ir/ (book pdf attached)
++ the persian version of book : https://haskellbook.ir/ 
 + the original version: https://haskellbook.com/
 
 
