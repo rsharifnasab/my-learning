@@ -17,3 +17,12 @@ I'm reading book: **haskell for principles**
 + [grokking-functional-programming](https://livebook.manning.com/book/grokking-functional-programming/chapter-1/v-6/)
 + [FP complete](https://tech.fpcomplete.com/haskell/learn)
 + [some cheatsheet (actually refrence card) in haskell website](https://wiki.haskell.org/Reference_cardi)
+
+### answers and notes from other users
++ [answers and good markdowns](https://github.com/johnchandlerburnham/hpfp)
+
++ [mostly notes + projects](https://github.com/xnning/haskell-programming-from-first-principles)
+
++ [answers more or less](https://github.com/Mithror/learning-haskell)
+
+  
