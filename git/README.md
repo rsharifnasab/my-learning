@@ -247,6 +247,6 @@ rm rf .git # get rid of git!
 
 + [this good slide](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)
 
-  
++ [tags](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
 
