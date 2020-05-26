@@ -1,4 +1,4 @@
-# git!
+# Git!
 
 
 > Git (/git/)[7] is a distributed version-control system for tracking changes in source code during software development.
@@ -272,4 +272,4 @@ rm -rf .git # get rid of git!
 
 + [tags](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
-
++ [git-scm](https://git-scm.com/)
