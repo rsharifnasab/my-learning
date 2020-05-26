@@ -48,7 +48,7 @@ traditional version controlling by programmer
 
 + SVN (apache sub-version)
 
-![SVN logo](./images/svn.png)
+![SVN logo](images/svn.png)
 
 
 
