@@ -46,9 +46,9 @@ traditional version controlling by programmer
 
 
 
-+ SVN (apache sub-version)
++ SVN (Apache sub-version)
 
-![SVN logo](images/svn.png)
+![SVN logo](https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Subversion_Logo.svg/1200px-Subversion_Logo.svg.png)
 
 
 
@@ -56,7 +56,13 @@ traditional version controlling by programmer
 
 + Visual Studio Team Services code (by Microsoft)
 
-![vs team services logo](https://logodix.com/logo/719944.png)
+
+
+<img src="https://logodix.com/logo/719944.png" width="300">
+
+
+
+
 
 
 
@@ -111,6 +117,8 @@ by Linus Torvalds
 1. search!
 2. I search too
 3. everybody else does search too
+
+
 
 
 
@@ -198,6 +206,10 @@ why? git is source-code version control, not for keeping documents
 ### merge conflict
 
 ![solve merge confilcts](https://lh6.googleusercontent.com/proxy/EXZtnMuZcVrMmQ1YJ1vdyoadiEy-FQtUocRc5mWiOqUgcxp5SlJ-T-Bs8dFERfxym7E7U6SebY1PJRx9OYPJ5gtFrDPMMFF-)
+
+
+
+
 
 
 
