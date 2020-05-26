@@ -1,7 +1,7 @@
 # git!
 
 
-> Git (/ɡɪt/)[7] is a distributed version-control system for tracking changes in source code during software development.
+> Git (/git/)[7] is a distributed version-control system for tracking changes in source code during software development.
 
 
 
@@ -100,10 +100,10 @@
 
 # Centralized version control
 
-![distributed](https://homes.cs.washington.edu/~mernst/advice/version-control-fig2.png)
+![](https://homes.cs.washington.edu/~mernst/advice/version-control-fig2.png)
 
 # Distributed version control
-![distributed](https://homes.cs.washington.edu/~mernst/advice/version-control-fig3.png)
+![](https://homes.cs.washington.edu/~mernst/advice/version-control-fig3.png)
 
 
 
@@ -123,7 +123,7 @@
 
 # file status life cycle 
 
-![lifecycle](https://slideplayer.com/slide/13332433/80/images/17/Git+file+lifecycle.jpg)
+![](https://slideplayer.com/slide/13332433/80/images/17/Git+file+lifecycle.jpg)
 
 
 
@@ -137,7 +137,7 @@
 
 + alternatives: gitlab, bitbucket, any other place
 
-  ![git vs github](https://blog.devmountain.com/wp-content/uploads/2019/07/Gitvs.Github-1a.jpg)
+  ![](https://blog.devmountain.com/wp-content/uploads/2019/07/Gitvs.Github-1a.jpg)
 
   
 
@@ -174,7 +174,7 @@
 
 # .gitignore, .git
 
-+ git: local and hidden folder that contains git internal files, don't open it!
++ .git: local and hidden folder that contains git internal files, don't open it!
 
 + delete .git folder in case of removing git from project
 
@@ -182,7 +182,7 @@
 
 ```
 *.class
-./.idea 
+.idea/
 __pycache__/
 ```
 
@@ -250,8 +250,8 @@ git diff # difference
 # common commands (5)
 ```bash
 # eveything messed up
-git reset --hard HEAD #revert to last commit
-rm rf .git # get rid of git!
+git reset --hard HEAD # revert to last commit
+rm -rf .git # get rid of git!
 ```
 
 
@@ -262,7 +262,7 @@ rm rf .git # get rid of git!
 
 + [this github io page](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
 
-+ [command by command express](https://recompilermag.com/issues/issue-1/how-to-teach-git/)
++ [command by command explain](https://recompilermag.com/issues/issue-1/how-to-teach-git/)
 
 + [jadi's videos](https://faradars.org/courses/fvgit9609-managed-distributed-edition-using-git)
 
