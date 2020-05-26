@@ -259,4 +259,7 @@ rm rf .git # get rid of git!
 
 + [tags](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
-
+created beamer with this command:
+```bash 
+pandoc BEAMER.md -t beamer -o panc.pdf --pdf-engine=xelatex
+```
