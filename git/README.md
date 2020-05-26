@@ -297,3 +297,11 @@ rm -rf .git # get rid of git!
 + [tags](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
 + [git-scm](https://git-scm.com/)
+
+
+
+make pdf from md file:
+```bash
+pandoc README.md -t beamer -o panc.pdf --pdf-engine=xelatex
+```
+
