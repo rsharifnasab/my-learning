@@ -1,7 +1,5 @@
 # git!
-```
-Git (/ɡɪt/)[7] is a distributed version-control system for tracking changes in source code during software development.
-```
+> Git (/ɡɪt/)[7] is a distributed version-control system for tracking changes in source code during software development.
 
 
 
