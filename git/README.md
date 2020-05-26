@@ -29,7 +29,7 @@ Git (/ɡɪt/)[7] is a distributed version-control system for tracking changes in
 
 traditional version controlling by programmer
 
-![trad](./images/trad.png)
+![trad](images/trad.png)
 
 + copy-paste/save-as whole project after every stable build
 + what if more than 1 developer work at the same time?
@@ -145,17 +145,17 @@ by Linus Torvalds
 + clone: download whole git 
 + pull: check for updates in the remote git
 
-![meme](./images/push-meme.png)
+![meme](images/push-meme.png)
 
 
 
 ## fork, PR, issue
 
-![fork](./images/fork.png)
+![fork](images/fork.png)
 
 
 
-![PR](./images/PR.png)
+![PR](images/PR.png)
 
 ### issue, issue template 
 
