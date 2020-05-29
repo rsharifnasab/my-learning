@@ -5,8 +5,8 @@
 int main(){
 	int n = 10;
 	//n = 2000000000; // kheliii
-	int *p;
 
+	int *p;
 	void* v = malloc(5);
 
 	p = (int*) malloc(n * sizeof(int)); // void* return mikone

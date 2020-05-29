@@ -17,6 +17,7 @@ int* heap(){
 int main(){
 
 	int *p1 = nullptr;
+	
 	//p1 = stack(); // dangling?
 	p1 = heap();
 	sleep(1.5);
