@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 
 int* f(){
 	int x = 2;
@@ -10,8 +10,8 @@ int* f(){
 
 int main(){
 	int *p = f(); // dangling!
-	std::cout << p << '\n';
-	std::cout << *p << '\n';
+        printf("%p\n",p);
+        printf("%d\n",*p);
 
 	return 0;
 }
