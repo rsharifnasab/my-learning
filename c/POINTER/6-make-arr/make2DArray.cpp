@@ -10,13 +10,6 @@ int **makeArray(int n,int m){
   return p;
 }
 
-/*****
-0: # # # 
-1: # 
-2: # # # # # # #
-3: # # 
-*//////
-
 void makeFree(int ** p,int n){ // call by refrence of pointer
 	for (int i = 0; i < n; i++) {
     free(p[i] );
@@ -37,5 +30,4 @@ int main(){
 	std::cout << "p is " << p << '\n'; // its not null now
 
 	return 0;
-
 }

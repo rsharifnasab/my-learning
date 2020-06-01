@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /*
+ * QUEUE
    p ->  []
-
 
    e a 
    p ->  [a]
@@ -16,14 +16,6 @@
    p -> [b]
 
 
-  int *p = malloc(10 * 4);
-
-
-  int *k = malloc(9*4);
- // move data  
- free(p) 
- p = k; 
-
 */
 
 
@@ -31,11 +23,6 @@ char *c = NULL;
 int n =0;
 
 
-// c:    1 2 3 4 5 6 7 8 9 10 
-
-
-// allocate be andaze n+1
-//
 void enqueue(char value){
   char *temp = (char*) malloc((n+1) * sizeof(char)); // make new array
   for (int i = 0; i < n; i++) {
@@ -49,11 +36,6 @@ void enqueue(char value){
 }
 
 
-// change array size  n -> n-1
-
-// c:    (1) 2 3 4 5 6 7 8 9 10 
-// t:      2 3 4 5 6 7 8 9 10 
-//
 char dequeue(){
   char *temp = (char*) malloc( (n-1) * sizeof(char)); // make new array
   for (int i = 0; i < n-1; i++) {
