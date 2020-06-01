@@ -1,7 +1,7 @@
-# my journy of learning lisp!
+# my journey of learning lisp!
 
 ## resources?
-+ [practical common lisb](http://www.gigamonkeys.com/book/)
++ [Practical Common Lisp(PCL): A great book to learn Common Lisp if you are already a programmer](http://www.gigamonkeys.com/book/)
 + [tutorials point](https://www.tutorialspoint.com/lisp/)
 + [lisp lang site](https://lisp-lang.org/learn/)
 + [x in y minutes](https://learnxinyminutes.com/docs/common-lisp/)
