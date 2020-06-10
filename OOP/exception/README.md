@@ -32,7 +32,7 @@ catch (NoSuchMethodException e) {
 
 + specific checked exceptions
 ```java
-incorrect way
+//incorrect way
 public void foo() throws Exception { 
 }
 
@@ -54,22 +54,26 @@ catch (NoSuchMethodException e) {
    throw new MyServiceException("Some information: " + e.getMessage()); 
 }
 
-//correct way
-catch (NoSuchMethodException e) {
-   throw new MyServiceException("Some information: " , e); 
+//correct way (wrap)
+catch (IOException e) { // checked
+   throw new MyServiceException("Some information: " , e); // unchecked
 }
 ```
 
 + either log or re throw, never do both 
 ```java
 //incorrect way
+try{
+    // something
+    
+}
 catch (NoSuchMethodException e) {
-   LOGGER.error("Some information", e);
+   LOGGER.error("Some information", e); // error e khub
    throw e;
 }
 ```
 
-+ never throw in finaly block 
++ never throw in finally block 
 
 + just catch specific exceptions that you can handle here 
 
@@ -84,10 +88,12 @@ catch (NoSuchMethodException e) {
 + use finally instead of catch, if you are not handling
 ```java
 try {
-  someMethod(); 
+  someMethod(); // momkene expception bede
+    // ma ham nemutinum handle konim
 } finally {
   cleanUp();    //do cleanup here
 }
+
 ```
 
 
@@ -100,7 +106,7 @@ try {
 + validate user input soon 
 
 
-+ catch all kind of exceptions and rethrow a business iexception
++ catch all kind of exceptions and rethrow a business exception
 ```java
 public void f() {
     try {
@@ -118,7 +124,9 @@ public void f() {
 
 ```java
 public int getPlayerScore(String playerFile) {
-    try (Scanner contents = new Scanner(new File(playerFile))) {
+    try (
+        Scanner contents = new Scanner(new File(playerFile))
+    ) {
       return Integer.parseInt(contents.nextLine());
     } catch (FileNotFoundException e ) {
       logger.warn("File not found, resetting score.");
@@ -170,7 +178,7 @@ public int getPlayerScore(String playerFile) {
   public void parseFile(String filePath) {
       try {
           // some code 
-      } catch (IOExceoutption | NumberFormatException ex) {
+      } catch (IOExcetption | NumberFormatException ex) {
           // handle
       } 
   }
