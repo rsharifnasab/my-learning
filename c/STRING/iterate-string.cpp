@@ -16,7 +16,7 @@ void forInString(char* s){
 	for(int i =0; i < len ; i++){
 		cout << s[i] << endl;
 		cout << isNum(s[i]) << endl;
-		cout << isNum(s[i])?"is num":"not num" << endl;
+		cout << (isNum(s[i])?"is num":"not num") << endl;
 	}
 }
 
