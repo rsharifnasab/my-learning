@@ -14,6 +14,5 @@ int main(){
 
 	std::cout << *p << '\n';
 
-	// *(p-2)
 	return 0;
 }
