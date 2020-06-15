@@ -1,12 +1,9 @@
 import java.util.*;
 import java.util.function.*;
+import java.util.stream.*;
 
-class Some {
-    String someFunc(Function<String,String> a, String b){
-        return a.apply(b);
-    }
-    
-}
+
+
 public class Employee{
     String name;
     int salary;
@@ -29,10 +26,10 @@ public class Employee{
 
     public boolean married(){
         return this.married;
-    }    
+    }
     public int getSalary(){
         return this.salary;
-    }                      
+    }
     public String getName() {
         return this.name;
     }
@@ -41,7 +38,7 @@ public class Employee{
 
 
     public static void main(String[] args) {
-   
+
         List<Employee> employees = Arrays.asList(
                 new Employee("naghi",22,true),
                 new Employee("ali",10,false),
@@ -57,17 +54,21 @@ public class Employee{
         for ( Employee e : employees ) {
             if(!e.married()) continue;
             if (min7 > e.getSalary()) min7 = e.getSalary();
-            
         }
-                                    
 
-        // java 8 way: 
-        int min8 = 
-            employees.stream()
+
+        List<Integer> someList = new LinkedList<>();
+        int ii = 2;
+        IntStream.rangeClosed(1,10).filter( a -> f(a) );
+
+
+        // java 8 way:
+        int min8 =
+            employees.stream() // Stream<Employee>
             .filter( a -> a.married() )
             .mapToInt( e -> e.getSalary() ) // convert object stream to int stream
-            .min()  // optional 
-            .getAsInt(); // {int} , {  }
+            .min()  // optional
+            .orElse(Integer.MAX_VALUE); // {int} , {  }
 
         System.out.println(min7);
         System.out.println(min8);
@@ -78,14 +79,13 @@ public class Employee{
         System.out.println("enter employee name");
         String name = new Scanner(System.in).next();
 
-        Employee found = employees.stream()
+        Employee found = employees
+            .stream()
+            .parallel()
             .filter(a -> a.getName().equals(name))
-            .findAny() // optional 
-            .orElse(null); 
-        System.out.println(found);     
-    } 
+            .findAny() // optional
+            .orElse(null);
+        System.out.println(found);
+    }
 
 }
-
-// terminal operation 
-// intermediate operation 

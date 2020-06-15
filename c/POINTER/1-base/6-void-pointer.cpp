@@ -6,7 +6,7 @@ int main(){
 	p = &a; // point to int
 	p = &b; // point to double
 
-//	std::cout << *p << std::endl; // compile error
+	//std::cout << *p << std::endl; // compile error
 	std::cout << *(  (double*) p  ) << std::endl;
 
 	return 0;

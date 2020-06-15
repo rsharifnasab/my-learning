@@ -27,7 +27,7 @@ int main(){
 
 
 
-      Student s1;
+      Student s1;// int i1
       s1.age = 12;
 
       if(mouse.isPressed){

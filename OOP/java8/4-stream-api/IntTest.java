@@ -6,17 +6,20 @@ public class IntTest {
 
         System.out.println("adad e 0-9:");
         IntStream.range(0,10)
-            .forEach(a -> System.out.println(a));
+            .forEach(System.out::println);
+
+
+          IntStream.range(0,10).anyMatch( a-> a == 10)
 
         for(int i =0; i < 10; i++){
             System.out.println(i);
         }
 /*
  input  : range()
-    |6|
-    |7|
-    |8|
     |9|
+    |8|
+    |7|
+    |6|
   output :forEach()
  */
 
@@ -29,8 +32,15 @@ public class IntTest {
         int tedadZoj = IntStream.rangeClosed(1,10)  // outpt: intStream
             .filter(a -> a%2 == 0) // output: intStream    /*  1 2 3 4 5 6 7 8 9 10  -> 2 4 6 8 10 */
             .count();
-
         System.out.println(tedadZoj);
+/*
+            Integer.valueOf(2000)
+              .toString()
+              .toLowerCase()
+              .substring(2,3)
+              .equals("12")
+*/
+
 
   /*
    * input : rangeClosed()
@@ -52,7 +62,7 @@ public class IntTest {
         IntStream.rangeClosed(1,20)
             .filter( a ->
                  IntStream.rangeClosed(1,a)
-                 .filter(b -> a%b == 0)
+                 .filter(b -> a%b == 0) // shomarande (maghsum alaih)
                  .count() == 2
                 )
             .forEach(a -> System.out.println(a));
@@ -63,30 +73,40 @@ public class IntTest {
         int[] zoj1to10 = IntStream.rangeClosed(1,5)
             .map( i -> 2*i )
             .toArray();
+
         System.out.println("arr[0] : " + zoj1to10[0]);
-        System.out.println(
-                Arrays.toString(zoj1to10)
-             );
+        System.out.println(Arrays.toString(zoj1to10));
 
 
         System.out.println("********************************");
         Scanner sc = new Scanner(System.in);
         String line = sc.nextLine();
-        String[] input_arr =  line.trim().split(" ");
-        int [] arr = Arrays.stream(input_arr)
-            .mapToInt( a -> Integer.parseInt(a) )
+        String[] input_arr =  line.trim().split(" "); // "s","aa","l"
+        int[] arr = Arrays.stream(input_arr)  // Stream<String>
+            .mapToInt( Integer::parseInt ) // IntStream
+
             .toArray();
 
-        Arrays.stream(arr).forEach(i -> System.out.println(i));
+        Arrays.stream(arr).forEach( (i) -> System.out.println(i));
 
 
         System.out.println("********************************");
         Random random = new Random();
         int randomMin = IntStream.rangeClosed(1,10)
-            .map(i -> random.nextInt() )
+            .map( i -> random.nextInt() )
             .reduce( (a,b) -> a<b ? a : b ) // return optional
             .getAsInt();
         System.out.println("some random integer : "+randomMin);
+
+/*
+  (12 15) 0 -5 42
+  (12 0) -5 42
+  (0 -5) 42
+  (-5 42)
+  -5
+
+  ( )
+*/
 
     }
 }
@@ -94,4 +114,3 @@ public class IntTest {
 // boxed
 // allMatch
 // noneMatch
-// lazy evaluation

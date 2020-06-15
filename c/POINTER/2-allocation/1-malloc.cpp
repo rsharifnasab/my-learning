@@ -1,15 +1,32 @@
 #include <iostream>
 #include <stdlib.h>
-#include <limits.h>
 
 int main(){
-	int n = 10;
-	//n = 2000000000; // kheliii
 
-	int *p;
-	void* v = malloc(5);
+	// stack
+	// int i
+	// array [50][50]
+	// ba'desh? naboud?
+	//
+	// heap
+	// by programmer
+	// int *p = malloc( 4 );
+	// free()
+	// age free nakonim?
+	// memory leak
+	//
+	
+	void* v = malloc(5); // 5 byte
+	free(v);
+	v = malloc(5);
+	free(v);
+	v = malloc(5);
+	free(v);
+	// memory leak
 
-	p = (int*) malloc(n * sizeof(int)); // void* return mikone
+
+	int *p = (int*) malloc(sizeof(int)); // void* return mikone
+	// cast from void* to int*
 
 	if (p==NULL) {
 		std::cout << "couldnt allocate" << '\n';
@@ -22,7 +39,7 @@ int main(){
 	printf("press anything to continue\n");
 	scanf("\n");
 
-	free(p);
+	free(p); 
 
 	return 0;
 

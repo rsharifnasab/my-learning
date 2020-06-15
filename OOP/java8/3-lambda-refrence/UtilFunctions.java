@@ -1,8 +1,12 @@
+import java.util.*;
+import java.util.function.*;
+
+
 public class UtilFunctions {
     public static void main(String[] args) {
 
 
-        Predicate<String> salamHast = (a) -> a.equals("salam");
+        Predicate<String> salamHast = (a) -> a.equals("salam"); // input:string output:boolean
 
         if( salamHast.test("some other string") )
             System.out.println("test mosbat");
@@ -18,6 +22,10 @@ public class UtilFunctions {
         // refrnce to method (same as pointer to function)
         Function<Integer,String> intToString2 = UtilFunctions::customToString;
         System.out.println(intToString2.apply(2));
+
+        Function<Integer,String> intToString2 = UtilFunctions::customToString;
+
+
     }
 
 
