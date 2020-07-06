@@ -68,6 +68,9 @@ char *encode(char *in){
 
 
 char *decode(char *in){
+    return NULL;
+    // not working by now!
+
     int len = strlen(in);
     int b64len = ceil(3./4.*len)+ +1;
     char *out = calloc(b64len, sizeof(char));
