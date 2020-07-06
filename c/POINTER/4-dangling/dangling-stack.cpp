@@ -6,17 +6,17 @@ int* stack(){
 	int x = 2; // in this scope's stack
 	int *p = &x;
 	return p;
-}
+} // return a pointer to a random place in stack
 
 int* heap(){
 	int *p = new int; // in heap
 	*p = 2;
 	return p;
-}
+} // return a pointer to 4 byte in heap
 
 int main(){
 
-	int *p1 = nullptr;
+	int *p1 = NULL;
 	
 	//p1 = stack(); // dangling?
 	p1 = heap();

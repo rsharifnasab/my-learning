@@ -31,17 +31,14 @@ after Java 8, Java changed from a pure OO language to multi-paradigm language.
 + terminal
   + count
   + forEach
-
-  + findAny
++ findAny
   + findFirst
-
   + reduce 
-  + collect 
++ collect 
   + toArray 
-
   + anyMatch 
   + allMatch 
-  + noneMatch 
++ noneMatch 
 
 
 ### extra:

@@ -9,6 +9,6 @@ int main(){
 	int *p;
 	p = &a; // it now points to location of a
 	cout << "p is " <<  p << endl; // it prints location of a
-	cout << "*p is " << *p << endl; // it prints value that p points to (exactly a!)
+	cout << "*p is " << (*p) << endl; // it prints value that p points to (exactly a!)
 	return 0;
 }

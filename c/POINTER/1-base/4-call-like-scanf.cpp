@@ -1,17 +1,25 @@
 #include <iostream>
-int f(int* p){
+void f(int* p){
 	std::cout << "in function" << std::endl;
 	std::cout << "p : " << p << std::endl;
-	std::cout << "*p " << *p << std::endl; 
-	return (*p);
+	*p = 4; 
 }
+
+void f(int a){
+	a = 3;
+}
+
 
 int main(){
 	int a = 2;
-	int b = f(&a);
+	f(a);
+
+//	scanf("%d",&a);
+	
+	f(&a);
 	std :: cout << "&a : " << &a << std::endl;
 
-	std :: cout << "b : " << b << std::endl;
+	std :: cout << "a : " << a << std::endl;
 
 	return 0;	 	 
 	

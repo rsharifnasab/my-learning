@@ -29,20 +29,20 @@ int main(){
     studentList[0].name = "ali alavi";
     studentList[0].age = 17;
 
-    studentList[1]->name = "taghi taghavi";
-    studentList[1]->age = 18;
-
-    printStudentByPointer(    );
-    printStudent(   );
-
-
-
+//    studentList[1]->name = "taghi taghavi";
+//    studentList[1]->age = 18;
 
     studentList[2].name = "naghi naghavi";
     studentList[2].age = 19;
 
     studentList[3].name = "ali alavi"; // again ali alavi
     studentList[3].age = 17;
+
+
+    printStudentByPointer( &studentList[0] );
+    printStudent( studentList[2] );
+
+
 
     return 0;
 }

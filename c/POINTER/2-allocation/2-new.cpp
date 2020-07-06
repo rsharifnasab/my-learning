@@ -1,8 +1,9 @@
 #include <iostream>
+#include <stdlib.h>
+
 using namespace std;
 int main(){
-	// int *p = &a; // it now points to location of a
-	int *p = new int;
+	int *p = new int; // p = (int*) malloc( sizeof(int) );
 
 	cout << "p address is memmory : "<< p << endl; // it prints location of a 
 
@@ -10,5 +11,7 @@ int main(){
 	cin >> *p ;
 	cout << " value of p is : " << *p << endl;
 	cout << " address of p is still : " << p << endl;
+
+	delete p;
 	return 0;
 }

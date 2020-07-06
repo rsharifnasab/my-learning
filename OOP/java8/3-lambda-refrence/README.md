@@ -3,7 +3,7 @@
 some code, a function, can be used as a function
 
 ```java
-a -> System.out.println(a);
+a -> System.out.println(a)
 ```
 
 this code will print `a.toString()` , the code isn't dependent  on type of `a`
