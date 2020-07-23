@@ -23,14 +23,14 @@ public class Server {
         // note that server doesn't need dest address 
 
         while(true){
-            // infinitely accept different clients
+            // accept different clients
             Socket socket = serverSocket.accept();
             System.out.println("someone is connecting");
 
             ClientHandler cl = new ClientHandler(socket,connections.size());
             connections.add(cl);
             cl.start();
-            // this thread will communicate with server 
+            // this thread handle communications of this client
         }
 
     }

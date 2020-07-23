@@ -21,9 +21,8 @@ public class ClientHandler extends Thread{
     }
 
 
-    // extending Thread
+    // our class extends Thread
     // after staring thread, this method will run 
-    // concurrently
     public void run(){
         try{
             String data = "";
@@ -34,16 +33,16 @@ public class ClientHandler extends Thread{
 
                 // send message to toher clients
                 for(ClientHandler cl : server.Server.connections){
-                    if(cl == this) continue; // dont send for ourself!
+                    if(cl == this) continue; // dont send message for sender
                     cl.send("from "+number+": "+data);
                 }
             }
         } catch(Exception e){
-            throw new RuntimeException("client handle of "+number+"had problems",e);
+            throw new RuntimeException("client handler of "+number+"had problems",e);
         }
     }
 
-    public synchronized void send(String toSend)throws IOException {
+    public synchronized void send(String toSend) throws IOException {
         out.writeUTF(toSend);
     }
 }

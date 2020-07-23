@@ -30,3 +30,21 @@ this is an chat application
 3. enter server IP address
 4. connect another client 
 5. enjoy
+
+
+
+
+
+---------------
+
+UPDATE: if you have more clients, you can use `ParallelClient` with same server 
+
+1. run server same as above
+2. compile client same as above 
+3. run parallel client as many as you want 
+
+```bash
+java client.ParallelClient
+```
+
+note: for handling concurrent read and write, a thread handle read from socket and main thread get data from scanner and write to socket
