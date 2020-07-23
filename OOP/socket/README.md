@@ -22,7 +22,7 @@ this is an chat application
    ```bash
    javac client/*java
    ```
-2.  run client with: 
+2. run client with: 
    ```bash
    java client.Client
    ```
