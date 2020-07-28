@@ -5,10 +5,10 @@ I'm reading book: **haskell for principles**
 
 
 ### other good resources: 
-+ learn you haskell book http://learnyouahaskell.com/starting-out
-+ haskell documentation https://wiki.haskell.org/Learning_Haskell
-+ https://wiki.haskell.org/Learn_Haskell_in_10_minutes
-+ learn x in y minutes https://learnxinyminutes.com/docs/haskell/
++ [learn you haskell book](http://learnyouahaskell.com/starting-out)
++ [haskell documentation](https://wiki.haskell.org/Learning_Haskell)
++ [in 10 minutes](https://wiki.haskell.org/Learn_Haskell_in_10_minutes)
++ [learn x in y minutes](https://learnxinyminutes.com/docs/haskell/)
 + http://learn.hfm.io/
 + https://lexi-lambda.github.io/learning-haskell/
 + http://www.happylearnhaskelltutorial.com/contents.html
@@ -18,6 +18,7 @@ I'm reading book: **haskell for principles**
 + [FP complete](https://tech.fpcomplete.com/haskell/learn)
 + [some cheatsheet (actually refrence card) in haskell website](https://wiki.haskell.org/Reference_cardi)
 + [what i whish new when learing haskell](http://dev.stephendiehl.com/hask/)
++ [cook book from official site](https://wiki.haskell.org/Cookbook)
 
 
 ### answers and notes from other users
