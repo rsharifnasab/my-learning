@@ -17,6 +17,8 @@ I'm reading book: **haskell for principles**
 + [grokking-functional-programming](https://livebook.manning.com/book/grokking-functional-programming/chapter-1/v-6/)
 + [FP complete](https://tech.fpcomplete.com/haskell/learn)
 + [some cheatsheet (actually refrence card) in haskell website](https://wiki.haskell.org/Reference_cardi)
++ [what i whish new when learing haskell](http://dev.stephendiehl.com/hask/)
+
 
 ### answers and notes from other users
 + [answers and good markdowns](https://github.com/johnchandlerburnham/hpfp)
@@ -25,4 +27,4 @@ I'm reading book: **haskell for principles**
 
 + [answers more or less](https://github.com/Mithror/learning-haskell)
 
-  
++ [let's read haskell from first principles]( https://blog.thomasheartman.com/posts/lets-read-haskell-programming-from-first-principles-pt-i) 
