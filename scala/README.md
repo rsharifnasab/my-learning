@@ -3,10 +3,10 @@
 ### scala: the scalable language based on JVM :D
 
 # resources
-+ 
+
 + [scala book](https://docs.scala-lang.org/overviews/scala-book/introduction.html)
 + [essential scala](https://books.underscore.io/essential-scala/essential-scala.html)
-+ [screative scala](https://www.creativescala.org/creative-scala.html)
++ [creative scala](https://www.creativescala.org/creative-scala.html)
 + [scala excercises](https://www.scala-exercises.org/scala_tutorial/)
 + [tutorials point](https://www.tutorialspoint.com/scala/index.htm)
 + [x in y minuts](https://learnxinyminutes.com/docs/scala/)
