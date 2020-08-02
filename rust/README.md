@@ -6,4 +6,5 @@
 + [rust by example](https://doc.rust-lang.org/stable/rust-by-example/)
 + [github io page](https://learning-rust.github.io/docs/a1.why_rust.html)
 + [tutorialspoint](https://www.tutorialspoint.com/rust/index.htm)
++ [easy rust in plain english](https://github.com/Dhghomon/easy_rust)
 
