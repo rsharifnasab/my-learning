@@ -297,9 +297,8 @@ or (True:xs) = True
 -- You probably remember this one?  Nothing extraordinary here.
 
 map :: (a -> b) -> [a] -> [b]
-map _ []     = codelab
-map f (a:as) = codelab
-
+map _ []     = []
+map f (a:as) = f a : map f as
 
 -- Same thing here for filter, except that we use it to introduce a new
 -- syntax: those | are called "guards". They let you specify different
@@ -314,26 +313,30 @@ map f (a:as) = codelab
 --     | otherwise =  x
 
 filter :: (a -> Bool) -> [a] -> [a]
-filter _ [] = codelab
+filter _ [] = []
 filter f (x:xs)
-  | codelab   = codelab
-  | otherwise = codelab
-
+  | f x = x : filter f xs 
+  | otherwise =filter f xs
 
 -- foldl
--- foldl (-) 0 [1,2,3,4]   ==   (((0 - 1) - 2) - 3) - 4   ==   -10
+-- foldl (−) 0 [1,2,3,4]   ==   (((0 - 1) - 2) - 3) - 4   ==   -10
 
 foldl :: (a -> x -> a) -> a -> [x] -> a
-foldl _ a []     = codelab
-foldl f a (x:xs) = codelab
+foldl _ a []     = a
+foldl f a (x:xs) = foldl f (f a x) xs
 
 
 -- foldr
--- foldr (-) 0 [1,2,3,4]   ==   1 - (2 - (3 - (4 - 0)))   ==    -2
+-- foldr (-) 0 [1,2,3,4] ==  1 - (2 - (3 - (4 - 0))) ==  -2
+--              1 2 3 (4 - 0)
+--              1 2 (3 - 4)
+--              1 2 - (-1)
+--              1 - 3
+--              -2
 
 foldr :: (x -> a -> a) -> a -> [x] -> a
-foldr _ a []     = codelab
-foldr f a (x:xs) = codelab
+foldr _ a []     = a
+foldr f a (x:xs) = f x (foldr f a xs)
 
 
 
@@ -393,21 +396,23 @@ foldr f a (x:xs) = codelab
 -- If we were to fix the "head" function, how could we do that?
 
 safeHead :: [a] -> Maybe a
-safeHead []    = codelab
-safeHead (x:_) = codelab
+safeHead []    = Nothing
+safeHead (x:_) = Just x
 
 
 -- "isNothing" should not need an explanation by now!
 
 isNothing :: Maybe a -> Bool
-isNothing = codelab
+isNothing Nothing = True
+isNothing _ = False
 
 
 -- The "fromMaybe" function is your way out of a Maybe value.
 -- It takes a default value to use in case our Maybe value is Nothing.
 
 fromMaybe :: a -> Maybe a -> a
-fromMaybe _ _ = codelab
+fromMaybe _ (Just a) = a
+fromMaybe defa (Nothing) = defa
 -- Consider starting with these patterns:
 --
 -- fromMaybe def fixme = codelab
@@ -419,7 +424,8 @@ fromMaybe _ _ = codelab
 -- ...doesn't it kinda look like fold?
 
 maybe :: b -> (a -> b) -> Maybe a -> b
-maybe _ _ _ = codelab
+maybe b _ Nothing  = b
+maybe _ f (Just a) = f a
 -- Consider starting with these patterns:
 -- maybe b _ fixme = codelab
 -- maybe _ f fixme = codelab
@@ -519,7 +525,7 @@ combine (a1, a2) (b1, b2) = (a1 + b1, a2 + b2)
 --     zip          :: [a] -> [b] -> [(a, b)]
 
 pairScore :: (Hand, Hand) -> Score
-pairScore = codelab codelab
+pairScore (h1,h2) = computeScore h1 h2 
 
 score :: [Hand] -> [Hand] -> Score
 score h1 h2 = codelab codelab $ codelab codelab $ codelab h1 h2
