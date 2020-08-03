@@ -23,9 +23,10 @@ I'm reading book: **haskell for principles**
 
 ### answers and notes from other users
 + [answers and good markdowns](https://github.com/johnchandlerburnham/hpfp)
-
 + [mostly notes + projects](https://github.com/xnning/haskell-programming-from-first-principles)
-
 + [answers more or less](https://github.com/Mithror/learning-haskell)
-
 + [let's read haskell from first principles]( https://blog.thomasheartman.com/posts/lets-read-haskell-programming-from-first-principles-pt-i) 
+
+### useful things
+
++ **hoogle**:search in [haskell docs with type](https://hoogle.haskell.org/)
