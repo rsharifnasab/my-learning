@@ -84,23 +84,23 @@ codelab = error "SOMETHING IS NOT IMPLEMENTED!"
 -}
 
 add :: Int -> Int -> Int
-add x y = codelab
+add x y = (+) x  y
 
 subtract :: Int -> Int -> Int
-subtract x y = codelab
+subtract x y = (-) x y
 
 double :: Int -> Int
-double x = codelab
+double = (*2)
 
 multiply :: Int -> Int -> Int
-multiply x y = codelab
+multiply x y = x*y
 
 -- Note that Haskell is strict about types even for basic integral types.
 -- Int is never automatically converted to Double.  But you can use
 -- fromIntegral to convert from any integral type to any number type.
 
 divide :: Int -> Int -> Double
-divide x y = codelab
+divide x y = fromIntegral(x) / fromIntegral(y)
 
 -- Remember that you can use if/then/else:
 --
@@ -111,7 +111,7 @@ divide x y = codelab
 -- even relatively small numbers.
 
 factorial :: Integer -> Integer
-factorial n = codelab
+factorial n = product [1..n]
 
 -- Expressions can be assigned names, called "bindings", using the
 -- following syntax:
@@ -120,13 +120,15 @@ factorial n = codelab
 --   in <expr2>
 --
 -- Spacing within an expression is (mostly) irrelevant - you can put spaces
--- anywhere you want.  As for the GCD itself, consider Euclid's algorithm:
+-- anywhere you want.  As for the GCD itself, consider Euclid's algorithm:
 --
 --   https://en.wikipedia.org/wiki/Greatest_common_divisor#Using_Euclid's_algorithm
 
 gcd :: Int -> Int -> Int
-gcd a b = codelab
-
+gcd a b  
+  | a == b = a
+  | a > b = gcd (a - b) b
+  | otherwise = gcd a (b - a)
 
 
 
@@ -150,7 +152,7 @@ data Minutes = Minutes Int
 --     div a b
 
 hours :: Minutes -> Int
-hours m = codelab
+hours (Minutes m) = div m 60
 
 -- In case you need some mathematical functions, you can use
 --
@@ -163,7 +165,7 @@ hours m = codelab
 -- example, for 15 and 25, distance is 10.
 
 timeDistance :: Minutes -> Minutes -> Minutes
-timeDistance m1 m2 = codelab
+timeDistance (Minutes m1) (Minutes m2) = Minutes (abs $ m1 - m2)
 
 type Point = (Int, Int)
 
@@ -179,7 +181,8 @@ type Point = (Int, Int)
 --     f (x, y) = abs x + abs y
 
 pointDistance :: Point -> Point -> Double
-pointDistance p1 p2 = codelab
+pointDistance (x1,y1) (x2,y2) =
+            sqrt $ fromIntegral $ (x1-x2)^2 + (y1-y2)^2 
 
 
 {- #####################################################################
@@ -198,7 +201,8 @@ pointDistance p1 p2 = codelab
 -- null tells you whether a list is empty or not
 
 null :: [a] -> Bool
-null fixme = codelab
+null [] = True
+null _ = False
 
 
 -- head returns the first element of the list.
@@ -207,14 +211,15 @@ null fixme = codelab
 
 head :: [a] -> a
 head []    = error "head: empty list"
-head fixme = codelab
+head (x:xs) = x
 
 
 -- tail returns everything but the first element.
 -- If the list is empty it panics
 
 tail :: [a] -> [a]
-tail = codelab
+tail []     = error "list e khali tail nadare"
+tail (x:xs) = xs
 
 
 
@@ -232,28 +237,36 @@ tail = codelab
 -- Do you remember it from the slides?
 
 length :: [a] -> Int
-length l = codelab
+length []     = 0
+length (x:xs) = 1 + length(xs)
 
 
 -- "and" returns True if all the boolean values in the list are True.
 -- What do you think it returns for an empty list?
 
 and :: [Bool] -> Bool
-and l = codelab
+and [] = True
+and [True]  = True
+and (True:xs) = and xs
+and _ = False
 
 
 -- "or" returns True if at least one value in the list is True.
 -- What do you think it returns for an empty list?
 
 or :: [Bool] -> Bool
-or l = codelab
+or [] = True
+or [a] = a
+or (False:xs) = or xs
+or (True:xs) = True
 
 
 -- "(++)" is the concatenation operator.  To concatenate two linked lists
 -- you have to chain the second one at the end of the first one.
 
 (++) :: [a] -> [a] -> [a]
-l1 ++ l2 = codelab
+[ ]    ++ l2 = l2
+(x:xs) ++ l2 = x : (xs ++ l2)
 
 
 
