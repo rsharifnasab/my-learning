@@ -103,8 +103,8 @@ data Color = Red     -- this is a constructor, of type Color
 
 allColors :: [Color]
 allColors = [minColor .. maxColor] -- enumFromTo minColor maxColor
-  where minColor = codelab
-        maxColor = codelab
+  where minColor = Red
+        maxColor = Magenta
 
 
 
@@ -133,7 +133,9 @@ type ColorMap = Map Color Int
 -- https://hackage.haskell.org/package/base/docs/Data-Maybe.html
 
 getIntOr0 :: Maybe Int -> Int
-getIntOr0 = codelab
+getIntOr0 = fromMaybe 0
+-- getIntOr0 (Just a)  = a
+-- getIntOr0 (Nothing) = 0
 
 
 -- [2.2]
@@ -144,7 +146,7 @@ getIntOr0 = codelab
 --     lookup :: key -> Map key value -> Maybe value
 
 getCount :: Color -> ColorMap -> Int
-getCount color cmap = codelab
+getCount color cmap = fromMaybe 0 $ lookup color cmap
 
 
 -- [2.3]
@@ -158,9 +160,7 @@ getCount color cmap = codelab
 -- For a fancier version, you can look up "insertWith".
 
 addColorToMap :: Color -> ColorMap -> ColorMap
-addColorToMap color cmap = codelab
-
-
+addColorToMap color cmap = insert color (getCount color cmap +1) cmap
 
 
 
@@ -200,7 +200,7 @@ data ErrorOr a = Error ErrorMsg -- an error with a message
 -- "wrapValue" takes a value, and puts it in the context of an "ErrorOr a".
 
 wrapValue :: a -> ErrorOr a
-wrapValue = codelab
+wrapValue = Value
 
 
 -- [3.2]
@@ -210,8 +210,8 @@ wrapValue = codelab
 -- pattern match to decide what to do.
 
 fmapValue :: (a -> b) -> ErrorOr a -> ErrorOr b
-fmapValue _ (Error msg) = codelab
-fmapValue f (Value   x) = codelab
+fmapValue _ (Error msg) = Error msg
+fmapValue f (Value   x) = Value $ f x
 
 
 -- [3.3]
@@ -222,8 +222,8 @@ fmapValue f (Value   x) = codelab
 -- a contextual value...
 
 apValue :: ErrorOr (a -> b) -> ErrorOr a -> ErrorOr b
-apValue (Error msg) _   = codelab
-apValue (Value   f) eoa = codelab
+apValue (Error msg) _   = Error msg
+apValue (Value   f) eoa = fmapValue f eoa
 
 
 -- [3.4]
@@ -231,8 +231,8 @@ apValue (Value   f) eoa = codelab
 -- "fmapValue", except we don't have to wrap the result.
 
 bindValue :: (a -> ErrorOr b) -> ErrorOr a -> ErrorOr b
-bindValue _ (Error msg) = codelab
-bindValue f (Value   x) = codelab
+bindValue _ (Error msg) = Error msg
+bindValue f (Value   x) = f x
 
 
 

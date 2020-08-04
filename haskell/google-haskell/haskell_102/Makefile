@@ -1,4 +1,4 @@
-FLAGS   = -Wall -O2 -threaded -feager-blackholing
+FLAGS   = -dynamic -Wall -O2 -threaded -feager-blackholing
 TARGETS = codelab solution test_codelab test_solution
 
 
