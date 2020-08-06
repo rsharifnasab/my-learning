@@ -300,6 +300,7 @@ map :: (a -> b) -> [a] -> [b]
 map _ []     = []
 map f (a:as) = f a : map f as
 
+
 -- Same thing here for filter, except that we use it to introduce a new
 -- syntax: those | are called "guards". They let you specify different
 -- implementations of your function depending on some Boolean
