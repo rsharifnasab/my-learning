@@ -13,6 +13,7 @@ I'm reading book: **haskell for principles**
 + https://lexi-lambda.github.io/learning-haskell/
 + http://www.happylearnhaskelltutorial.com/contents.html
 + https://jeoygin.gitbooks.io/learn-y-in-x-minutes/content/haskell.html
++ [haskell for c programmers](https://wiki.haskell.org/Haskell_Tutorial_for_C_Programmers)
 
 + [grokking-functional-programming](https://livebook.manning.com/book/grokking-functional-programming/chapter-1/v-6/)
 + [FP complete](https://tech.fpcomplete.com/haskell/learn)
