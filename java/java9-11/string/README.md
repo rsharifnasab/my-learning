@@ -1,0 +1,3 @@
+# string methods
+
+String.repeat()
