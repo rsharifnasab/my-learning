@@ -8,3 +8,21 @@ one = 1
 
 isOne ::  Int -> Bool
 isOne a = f a one
+
+
+id' :: a -> Int 
+id' a = 1
+
+twd :: a -> b -> b
+twd a b = b
+
+
+len :: (Num b) => [a] -> b
+len [] = 0
+len (x:xs) = 1 + len xs  
+
+nimLen :: (Fractional b) => b -> b
+nimLen b = b/2
+
+main :: IO ()
+main = print $ nimLen $ len [1..5]
