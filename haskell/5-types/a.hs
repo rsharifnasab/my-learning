@@ -18,11 +18,22 @@ twd a b = b
 
 
 len :: (Num b) => [a] -> b
+
 len [] = 0
 len (x:xs) = 1 + len xs  
 
 nimLen :: (Fractional b) => b -> b
 nimLen b = b/2
 
+
+two :: (Num a) => a
+two = 1 + 1
+
+taghsim :: (Fractional f) => f -> f
+taghsim f = f/2
+
 main :: IO ()
-main = print $ nimLen $ len [1..5]
+main = print $ taghsim two 
+
+
+--print $ nimLen $ len [1..5]
