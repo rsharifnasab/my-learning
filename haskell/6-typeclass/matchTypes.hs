@@ -41,22 +41,18 @@ young :: Ord a => [a] -> a
 young xs = head.sort $ xs
 
 
+t :: Int 
+t  =  2 
+test :: (Num a) => a
+test = fromIntegral t 
 
 
 chk :: Eq b => (a -> b) -> a -> b -> Bool
 chk a2b a b = a2b a == b
 
 
-{-
- -- QUESTIONS -- 
-t :: Int 
-t  =  2 
-test :: (Num a) => a
-test = t 
-
 arith :: Num b => (a -> b) -> Integer -> a -> b
-arith               a2b       someInt    a = (a2b a) - someInt
--}
+arith               a2b       someInt    a = a2b a - fromIntegral someInt
 
 
 main :: IO ()
