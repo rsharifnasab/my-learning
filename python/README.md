@@ -1,4 +1,4 @@
-# my journy of learning python!
+# my journey of learning python!
 
 ## my resources
 + mft! (physical class)
