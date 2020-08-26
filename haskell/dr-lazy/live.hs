@@ -1,16 +1,16 @@
 {-# LANGUAGE TypeApplications #-}
 
-data Person = Hadi | DrLazy | JediMahdi 
+data Person = Hadi | DrLazy | JediMahdi | DanglingPointer
     deriving (Show)
 
 memptyIfFalse :: Monoid a => a -> Bool -> a
 memptyIfFalse a avail = if avail then a else mempty
 
 optionalPeople :: Bool -> [Person]
-optionalPeople = memptyIfFalse [ Hadi ]
+optionalPeople = memptyIfFalse [Hadi]
 
 defaultPeople :: [Person]
-defaultPeople = [ DrLazy, JediMahdi ]
+defaultPeople = [DrLazy, JediMahdi, DanglingPointer]
 
 main :: IO ()
 main = do
