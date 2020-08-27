@@ -43,9 +43,81 @@ resources:
 + mocking.. 
 
 ## Junit 
-+ Unit test case -> test case of unit test 
++ Test
+```java 
+@Test
+public void someTest(){
+    // this will pass
+}
+```
+
++ Assertion
+```
+@Test
+public void assertExample(){
+    assertEquals("salam", new String("salam"));
+    assertSame(1, 1);
+    assertNull(null);
+    assertNotNull(Integer.valueOf(1));
+    assertTrue(1==1);
+    assertFalse(1==2);
+}
+```
+
++ fail 
+```java
+@Test
+public void failingTest(){
+    fail(); // same as assertTrue(False);
+
+}
+```
+
++ Before, After
+```java 
+@Before
+public void setup(){
+    // setup here
+}
+@After 
+public void teardown(){
+    // cleaing code 
+}
+```
+
++ BeforeClass, AfterClass
+```java
+@BeforeClass
+public void setup(){
+    // setup here
+}
+@AfterClass 
+public void teardown(){
+    // cleaing code 
+}
+
+```
 
 
+
++ test runner 
+```java
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+public class TestRunner {
+   public static void main(String[] args) {
+      Result result = JUnitCore.runClasses(TestJunit.class);
+		
+      for (Failure failure : result.getFailures()) {
+         System.out.println(failure.toString());
+      }
+		
+      System.out.println(result.wasSuccessful());
+   }
+}
+```
 
 
 
