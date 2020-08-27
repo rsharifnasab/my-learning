@@ -61,6 +61,7 @@ public void assertExample(){
     assertNotNull(Integer.valueOf(1));
     assertTrue(1==1);
     assertFalse(1==2);
+    // many more.. arrayEquals, notSame, ..
 }
 ```
 
