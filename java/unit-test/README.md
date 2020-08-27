@@ -16,7 +16,7 @@
 + who? developer or QA?
 + what is code coverage? how much?
 + CI -> continues integration
-+ courage to change -> legacy code = code without change 
++ courage to change -> legacy code = code without test 
 + test: example of how to use code 
 + where? everywhere
 
@@ -40,13 +40,14 @@ resources:
 + JUnit
 + pyUnit 
 + CppUnit
-+ mocking.. 
+
+  
 
 ## Junit 
 + Test
 ```java 
 @Test
-public void someTest(){
+public void someTest() throws Exception{
     // this will pass
 }
 ```

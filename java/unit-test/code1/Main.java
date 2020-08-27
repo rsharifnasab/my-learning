@@ -3,7 +3,7 @@ class Main{
         return "this is f";
     }
     public static int g(){
-        return 2;
+        return 3;
     }
 
 }
