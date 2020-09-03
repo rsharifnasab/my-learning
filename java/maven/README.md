@@ -24,7 +24,7 @@
 
 [read more](https://www.baeldung.com/java-commons-lang-3)
 
-+ google guava 
++ Google guava 
 
   [read more](http://zetcode.com/articles/guava/)
 
@@ -35,7 +35,7 @@
 ## maven Project Object Model 
 A comprehensive model for projects, which is reusable, maintainable, and easier to comprehend.
 
-Plugins or tools that interact with this declarative model.
+Plug-ins or tools that interact with this declarative model.
 
 
 
