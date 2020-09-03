@@ -1,6 +1,7 @@
 # maven 
-1. pip for python
-2. ant, gradle for java
+1. pip for python `import numpy`
+2. ant, gradle for Java
+3. cargo for rust!
 
 ## what is build?
 
@@ -19,8 +20,16 @@
 ## what is dependency
 
 + use another libraries
-+ junit jar file
-+ apache commons (IO, numbers, collections, command line argument parser, crypto, image, StringUtils)
++ recall: junit jar file
++ apache commons (IO, numbers, collections, command line argument parser, cryptography, image, StringUtils)
++ how should we manage them? copy into directory? commit it?
+
+```
+requirments.txt -> pypi
+maven pom.xml -> mvnrepository
+```
+
+
 
 [read more](https://www.baeldung.com/java-commons-lang-3)
 
@@ -39,7 +48,7 @@ Plug-ins or tools that interact with this declarative model.
 
 
 
-## maven phases (goals)
+## maven phases
 
 - *validate:* check if all information necessary for the build is available
 - *compile:* compile the source code
@@ -60,6 +69,7 @@ Plug-ins or tools that interact with this declarative model.
 
 + not dependencies
 + do something in different phases
++ add phase to goals
 + example: maven jar plug-in
 
 #### Putting life-cycle phases plug‐ins and goals together
@@ -83,13 +93,20 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -Darchety
 mvn package 
 
 java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+java -cp target/classes/ com.mycompany.app.App
 ```
 
 
 
+## add a library to pom
+
++ add apache commons
++ compile
++ package
 
 
 
+## add dependencies to jar file 
 
 ## resources
 
