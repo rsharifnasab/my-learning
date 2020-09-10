@@ -32,3 +32,10 @@ foldl (\x y -> concat ["(",x,"+",y,")"]) "0" xs
 -> "(((((0+1)+2)+3)+4)+5)"
 
 
+
+### their relation
+
+``` haskell
+foldr f z xs =
+foldl (flip f) z (reverse xs)
+```
