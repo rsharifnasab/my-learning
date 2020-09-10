@@ -39,3 +39,12 @@ foldl (\x y -> concat ["(",x,"+",y,")"]) "0" xs
 foldr f z xs =
 foldl (flip f) z (reverse xs)
 ```
+But only for finite lists! Consider:
+
+
+scanl
+explain 
+fibs = 1 : scanl (+) 1 fibs
+
+
+
