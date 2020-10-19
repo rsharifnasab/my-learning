@@ -6,8 +6,6 @@
 
 به صورت combinatitional
 
-[TOC]
-
 
 
 # ۴.۰−مقدمه
