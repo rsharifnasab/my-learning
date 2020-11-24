@@ -38,7 +38,7 @@ further read: [this link](https://javacup.ir/java8-streamapi/)
   ```java
   Optional<String> op = Optional.of("salam");
   op = Optional.of(null);
-  op.isEmpty(/* runnable */);
+  op.isEmpty();
   op.ifPresent(/* runnable */);
   op.get(); 
   op.orElse("some other value");

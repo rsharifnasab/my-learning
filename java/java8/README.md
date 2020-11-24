@@ -14,34 +14,46 @@ after Java 8, Java changed from a pure OO language to multi-paradigm language.
 
 ## Table of contents
 1. default method in interface
-1. functional interface 
+1. functional interface
 1. lambda, method reference
 1. IntStream
-1. Stream API 
-1. Optional 
+1. Stream API
+1. Optional
 
 
+#### review
++ method pipe?
+```
+Integer.valueOf(2000)
+        .toString()
+        .toLowerCase()
+        .substring(2,3)
+        .equals("12")
 
-#### stream operations 
-+ non terminal 
-  + map 
-  + filter 
-  + sort 
+```
+
++ interface, abstract windows
+
+
+#### stream operations
++ non terminal
+  + map
+  + filter
+  + sort
 
 + terminal
   + count
   + forEach
 + findAny
   + findFirst
-  + reduce 
-+ collect 
-  + toArray 
-  + anyMatch 
-  + allMatch 
-+ noneMatch 
+  + reduce
++ collect
+  + toArray
+  + anyMatch
+  + allMatch
++ noneMatch
 
 
 ### extra:
-  + lazy evaluation 
+  + lazy evaluation
   + new switch case
-

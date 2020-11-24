@@ -9,7 +9,6 @@ interface Java7Interface {
 public class J7Test {
     public static void main(String[] args) {
 
-
         Java7Interface j7i = new Java7Interface(){
             public boolean todayIsSaturday() {
                 DayOfWeek dow = LocalDate.now().getDayOfWeek();
@@ -23,8 +22,7 @@ public class J7Test {
 
         System.out.println(j7i.todayIsSaturday());
         System.out.println(j7i.todayIsNotSaturday());
-    }                                        
+    }
 
 
 }
-

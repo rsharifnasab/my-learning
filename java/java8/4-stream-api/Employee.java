@@ -57,10 +57,6 @@ public class Employee{
         }
 
 
-        List<Integer> someList = new LinkedList<>();
-        int ii = 2;
-        IntStream.rangeClosed(1,10).filter( a -> f(a) );
-
 
         // java 8 way:
         int min8 =

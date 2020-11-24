@@ -23,9 +23,6 @@ public class UtilFunctions {
         Function<Integer,String> intToString2 = UtilFunctions::customToString;
         System.out.println(intToString2.apply(2));
 
-        Function<Integer,String> intToString2 = UtilFunctions::customToString;
-
-
     }
 
 
