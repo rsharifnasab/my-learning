@@ -28,11 +28,11 @@ Integer.valueOf(2000)
         .toString()
         .toLowerCase()
         .substring(2,3)
-        .equals("12")
+        .equals("12");
 
 ```
 
-+ interface, abstract windows
++ interface, abstract classes
 
 
 #### stream operations
@@ -43,17 +43,20 @@ Integer.valueOf(2000)
 
 + terminal
   + count
+  
   + forEach
-+ findAny
+  + findAny
   + findFirst
+
   + reduce
-+ collect
+  + collect
   + toArray
+  
   + anyMatch
   + allMatch
-+ noneMatch
+  + noneMatch
 
 
-### extra:
-  + lazy evaluation
-  + new switch case
+
+
+### Lazy evaluation
