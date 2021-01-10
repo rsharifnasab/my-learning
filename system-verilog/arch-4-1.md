@@ -142,7 +142,7 @@ endmodule
 
 و نتیجه‌ی سنتزِ آن چیزی شبیه به شکل زیر است:
 
-![](/home/roozbeh/Documents/memari/images/example-synthesis.png)
+![](./images/example-synthesis.png)
 
 
 
@@ -323,7 +323,7 @@ N'Bvalue
 
 
 
-![](/home/roozbeh/Documents/memari/images/numbers.png)
+![](./images/numbers.png)
 
 
 
