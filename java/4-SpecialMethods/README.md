@@ -48,7 +48,7 @@ in python we name them `magic methods`
 
 + most classes have fields and fields need valid values!
 + when we create a class we should set valid values (and maybe do more things)
-+ constructors help us guarantee that the created instance have a valid state (ans also force our class user)
++ constructors help us guarantee that the created instance have a valid state (and also force our class user)
 + they also help to creating immutable objects
 + by default all classes have a  zero parameter constructor, when we called `new Student()` it is called.
 + when we add our first constructor, the default one removed.
