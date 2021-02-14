@@ -198,7 +198,7 @@ __pycache__/
 
 good site: [gitignore.io](https://www.gitignore.io/)
 
-#### do not commit large and binary files!
+#### do not commit large and binary files! why?
 
 
 
@@ -263,7 +263,7 @@ git clone https://github.com/sb-acc/some-repo.git
 # common commands (4)
 ```bash
 # see old commits and other versions
-git log 
+git log
 git log --abbrev-commit --pretty=oneline
 git checkout # change HEAD 
 git diff # difference 
@@ -283,6 +283,8 @@ rm -rf .git # get rid of git!
 
 
 # further read
+
++ [Parsa's really good slies](http://slides.com/parsahejabi/git#/1)
 
 + [this github io page](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
 
