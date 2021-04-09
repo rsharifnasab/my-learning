@@ -7,6 +7,7 @@
 -   CSP concurrency model : go-routines and channels
 -   good tooling in Vim family
 -   good support for cross-compilation
+- read more in [this link](https://medium.com/@kevalpatel2106/why-should-you-learn-go-f607681fad65)
 
 ### Books and complete guides
 
