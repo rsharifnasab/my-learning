@@ -1,9 +1,8 @@
-import java.util.concurrent.atomic.AtomicInteger;
-
 import java.io.*;
 import java.net.*;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
 
 
 class ClientHandler extends Thread {
@@ -14,7 +13,8 @@ class ClientHandler extends Thread {
     final AtomicInteger usersCount;
 
     public ClientHandler(Socket socket, int ID, Map<String, String> db, AtomicInteger usersCount)
-    throws IOException {
+            throws IOException {
+
         this.id = ID;
 
         this.dis = new DataInputStream(
@@ -53,7 +53,6 @@ class ClientHandler extends Thread {
                 dos.flush();
             }
         } catch (IOException e) {
-            //e.printStackTrace();
             System.out.println("client " + this.id + " disconnected");
             this.usersCount.decrementAndGet();
         }
@@ -91,8 +90,6 @@ public class Server {
         port = Integer.parseInt(args[0]);
         db = new ConcurrentHashMap<>();
         usersCount = new AtomicInteger(0);
-
-
 
         ServerSocket serverSocket = new ServerSocket(port);
 
