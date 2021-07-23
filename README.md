@@ -1,5 +1,5 @@
 ### my learning process step by step! 
-+ [OOP with Java](OOP)
++ [OOP with Java](java)
 + [flask](flask)
 + [haskell](haskell)
 + [python](python)
