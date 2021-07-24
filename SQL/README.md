@@ -1,5 +1,5 @@
 # SQL 
 
-+ sqlbolt [+](https://sqlbolt.com/lesson/filtering_sorting_query_results) 
++ sqlbolt [+](https://sqlbolt.com/) 
 a really good interactive site for learning SQL with awesome example and exercises
 
