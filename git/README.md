@@ -1,3 +1,10 @@
+---
+title: git slides
+author: Roozbeh Sharifnasab
+extensions:
+  - image_ueberzug
+---
+
 # Git!
 
 > Git (/git/)[7] is a distributed version-control system for tracking changes in source code during software development.
@@ -37,15 +44,15 @@
 
 # SVN (by Apache)
 
-![](https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Subversion_Logo.svg/1200px-Subversion_Logo.svg.png)
+![](images/subversion.png)
 
 # Visual Studio Team Services code (by Microsoft)
 
-![](https://logodix.com/logo/719944.png)
+![](images/vs.png)
 
 # git (by Linus Torvalds)
 
-![](https://files.virgool.io/upload/users/4458/posts/q85kpw57vte6/quvbhkgvelb5.jpeg)
+![](images/git.png)
 
 # As of 2020, the 5.6 release of the Linux kernel had around 33 million lines of code.
 
@@ -58,15 +65,15 @@
 -   non-linear (branches)
 -   handle large projects efficiently
 
-![](https://zdnet2.cbsistatic.com/hub/i/2017/11/24/6e389aa3-a510-4254-9f1e-965e0a6f036e/linustorvalds770x57.jpg)
+![15](images/linus.jpg)
 
 # Centralized version control
 
-![](https://homes.cs.washington.edu/~mernst/advice/version-control-fig2.png)
+![](images/centralized.png)
 
 # Distributed version control
 
-![](https://homes.cs.washington.edu/~mernst/advice/version-control-fig3.png)
+![](images/distributed.png)
 
 # how to use git
 
@@ -76,7 +83,7 @@
 
 # file status life cycle
 
-![](https://slideplayer.com/slide/13332433/80/images/17/Git+file+lifecycle.jpg)
+![](images/lifecycle.jpg)
 
 # github
 
@@ -86,7 +93,7 @@
 
 -   alternatives: gitlab, bitbucket, any other place
 
-    ![](https://blog.devmountain.com/wp-content/uploads/2019/07/Gitvs.Github-1a.jpg)
+    ![](images/github.jpg)
 
 #### gist: some part of code to share with others
 
@@ -109,7 +116,7 @@
 
 # issue, issue template
 
-![](https://github.blog/wp-content/uploads/2018/05/new-issue-page-with-multiple-templates.png?fit=1604%2C694)
+![](images/issue.png)
 
 # .gitignore, .git
 
@@ -131,15 +138,15 @@ good site: [gitignore.io](https://www.gitignore.io/)
 
 # branch
 
-![](https://www.nobledesktop.com/image/gitresources/git-branches-merge.png)
+![](images/branch.png)
 
 # merge
 
-![](https://res.cloudinary.com/practicaldev/image/fetch/s--MEKaM3dY--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://cl.ly/430Q2w473e2R/Image%25202018-04-30%2520at%25201.07.58%2520PM.png)
+![](images/merge.png)
 
 # merge conflict
 
-![](https://lh6.googleusercontent.com/proxy/EXZtnMuZcVrMmQ1YJ1vdyoadiEy-FQtUocRc5mWiOqUgcxp5SlJ-T-Bs8dFERfxym7E7U6SebY1PJRx9OYPJ5gtFrDPMMFF-)
+![](images/conflict.png)
 
 # common commands (1)
 
@@ -209,4 +216,12 @@ Make pdf from md file:
 
 ```bash
 pandoc README.md -t beamer -o panc.pdf --pdf-engine=xelatex
+```
+
+
+view in terminal
+```bash
+pip install lookatme
+pip install lookatme.contrib.image_ueberzug
+looakatme README.md
 ```
