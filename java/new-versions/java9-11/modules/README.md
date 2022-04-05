@@ -45,5 +45,5 @@ java --module-path out --module ir.javacup.somemodule/ir.javacup.somepackage.Som
 
 + dont end name with number -> not handle versioning with it
 + `ir.javacup.somemodule` should be name of folder itself 
-+ no upper case in mpdule name (as well as packages)
++ no upper case in module name (as well as packages)
 
