@@ -48,12 +48,17 @@
 
 
 ## Specific Topics
+
 + vimscript
   + [learn x in y minutes](https://learnxinyminutes.com/docs/vimscript/)
   + [cheatsheet](https://devhints.io/vimscript)
   + [learn in hard way](https://learnvimscriptthehardway.stevelosh.com/)
 
 + lua for neovim
+ + [in github readme with link to another tutorials](https://github.com/nanotee/nvim-lua-guide)
+ + [beautiful black site](https://teukka.tech/luanvim.html)
+ + [everything you need to know](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
+ + [brief lua tutorial](https://www.gatlin.io/blog/post/lua-primer-for-neovim)
 
 
 + editing status lines 
@@ -76,7 +81,7 @@
   + [github gist](https://gist.github.com/nelstrom/1056049/784e252c3de653e204e9e128653010e19fbd493f)
 
 + Spell checking
-  +[linux.com](https://www.linux.com/training-tutorials/using-spell-checking-vim/)
+  + [linux.com](https://www.linux.com/training-tutorials/using-spell-checking-vim/)
 
 + Clipboard
   + [System clipboard](https://stackoverflow.com/a/1498026/10999348)
