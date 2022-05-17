@@ -25,9 +25,14 @@ In this folder I want to share my programming experience in elixir languages
   1. [x in y minutes](https://learnxinyminutes.com/docs/elixir/)
   2. [this github page](https://github.com/dwyl/learn-elixir)
 
++ specific topics
+  1. [Erlang efficiency guide](https://www.erlang.org/doc/efficiency_guide/users_guide.html) 
+  2. [OTP guide](https://serokell.io/blog/elixir-otp-guide)
+
 ## blogs
-  + [elixir web development](https://blog.openbloc.fr/elixir-web-development-101-first-steps/)
+  + [why elixir for web dev](https://www.monterail.com/blog/why-elixir)
   + [The Best Tutorials To Learn Elixir For Beginners](https://medium.com/quick-code/the-best-tutorials-to-learn-elixir-for-beginners-3d805ebfe5d3)
+
 
      
 
