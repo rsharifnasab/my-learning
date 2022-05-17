@@ -26,7 +26,7 @@
   + [Parham Alvani](https://github.com/1995parham/dotfiles/tree/master/nvim)
   + [Sajjad Heydari](https://github.com/MCSH/dot-files/blob/master/.config/nvim/init.vim)
   + [Mo1ein](https://github.com/mo1ein/My-dotfiles/blob/master/.vimrc)
-  + [Hoomanist](https://github.com/hoomanist/dotfiles/blob/master/nvim/init.vim)
+  + [Hoomanist](https://github.com/hoomanist/dotfiles/blob/master/nvim/)
   + [rsharifnasab](https://github.com/rsharifnasab/dotfiles/tree/master/.config/nvim)
 
 
