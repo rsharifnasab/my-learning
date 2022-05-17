@@ -54,13 +54,6 @@
   + [cheatsheet](https://devhints.io/vimscript)
   + [learn in hard way](https://learnvimscriptthehardway.stevelosh.com/)
 
-+ lua for neovim
- + [in github readme with link to another tutorials](https://github.com/nanotee/nvim-lua-guide)
- + [beautiful black site](https://teukka.tech/luanvim.html)
- + [everything you need to know](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
- + [brief lua tutorial](https://www.gatlin.io/blog/post/lua-primer-for-neovim)
-
-
 + editing status lines 
   + [this plugin](https://shapeshed.com/vim-statuslines/) 
   + [this plugin also](https://github.com/vim-airline/vim-airline)

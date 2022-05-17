@@ -8,12 +8,10 @@
 + a site with interactive examples [+](https://www.luascript.dev/learn)
 
 # lua for neovim
-+ this github repo [+](https://github.com/nanotee/nvim-lua-guide)
-+ teuka.tech [+](https://teukka.tech/luanvim.html)
-+ this blog post [+](https://teukka.tech/luanvim.html)
-+ a good example and documentation [+](https://oroques.dev/notes/neovim-init/)
-
-
-
+ + [a good example and documentation](https://oroques.dev/notes/neovim-init/)
+ + [in github readme with link to another tutorials](https://github.com/nanotee/nvim-lua-guide)
+ + [beautiful black site](https://teukka.tech/luanvim.html)
+ + [everything you need to know](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
+ + [brief lua tutorial](https://www.gatlin.io/blog/post/lua-primer-for-neovim)
 
 
