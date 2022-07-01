@@ -33,7 +33,5 @@ fn main() {
 
     words.sort_by_key(|word| score(word.to_string()));
 
-    for ele in words.iter().take(10) {
-        println!("{}", ele);
-    }
+    words.iter().take(10).for_each(|ele| println!("{}", ele));
 }
