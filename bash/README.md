@@ -6,6 +6,7 @@
 - [Bash cheat sheet](https://www.educative.io/blog/bash-shell-command-cheat-sheet)
 - [Tips and commands for beginners](https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je)
 
+- [Explain different topics with example](https://linuxjourney.com/)
 
 - [Intro to bash scripting](https://www.youtube.com/watch?v=_n5ZegzieSQ)
 - [Bash operators](https://www.youtube.com/watch?v=hwrnmQumtPw)
@@ -20,7 +21,7 @@
 - [some basic commands](https://www.educative.io/blog/bash-shell-command-cheat-sheet)
 
 - [Linux hint](https://linuxhint.com/bash_scripting_tutorial_beginners/)
-- [shellscript.sh](https://www.shellscript.sh/)
+- [shellscript.sh book](https://www.shellscript.sh/)
 
 - [learn x in y min](https://learnxinyminutes.com/docs/bash/)
 
