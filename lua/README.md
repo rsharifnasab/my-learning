@@ -6,6 +6,7 @@
 + 33 minute video [+](https://www.youtube.com/watch?v=IP3J56sKtn0)
 + all LUA in one hour [+](https://www.youtube.com/watch?v=iMacxZQMPXs)
 + a site with interactive examples [+](https://www.luascript.dev/learn)
++ lua by example [+](https://luabyexample.org/)
 
 # lua for neovim
  + [a good example and documentation](https://oroques.dev/notes/neovim-init/)
