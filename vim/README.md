@@ -6,6 +6,7 @@
 + `vimtutor` command or open vim and type `:Tutor`
 + [four week plan](https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85)
 
++ [Learning vim progressively](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
 
 
 ## Basic vim
