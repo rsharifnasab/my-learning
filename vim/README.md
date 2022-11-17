@@ -22,7 +22,7 @@
 + [Install plugin](https://linuxhint.com/vim_install_plugins/)
 + Config for starters
   + select languages and generate config [vim-bootstrap](https://vim-bootstrap.com/)
-+ sensible config for shared machines/first timers [vim-sensible](https://github.com/tpope/vim-sensible)
+  + sensible config for shared machines/first timers [vim-sensible](https://github.com/tpope/vim-sensible)
 + Good config files for starters
   + [Parham Alvani](https://github.com/1995parham/dotfiles/tree/master/nvim)
   + [Sajjad Heydari](https://github.com/MCSH/dot-files/blob/master/.config/nvim/init.vim)
