@@ -336,7 +336,7 @@ rm -rf .git # get rid of git!
 
 # further read
 
--   [Parsa's really good slides](http://slides.com/parsahejabi/git#/1)
+-   [Interactive learning](https://learngitbranching.js.org/)
 -   [Amir's awesome slides](https://github.com/amirhallaji/My-Learning/tree/master/git)
 -   [very good cheat sheet](https://github.com/arslanbilal/git-cheat-sheet)
 -   [this Github io page](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
