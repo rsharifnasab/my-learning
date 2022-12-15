@@ -20,9 +20,10 @@
 + [explain some config file](https://blog.hellojs.org/configure-vim-from-scratch-efe5cbc1c563) 
 + [why vim and explain anothe config file](https://levelup.gitconnected.com/why-and-how-i-use-vim-da322260aa6c)
 + [Install plugin](https://linuxhint.com/vim_install_plugins/)
-+ Config for starters
++ [Setup config and install plugins](https://www.jakewiesler.com/blog/getting-started-with-vim)
+### Config for starters
   + select languages and generate config [vim-bootstrap](https://vim-bootstrap.com/)
-+ sensible config for shared machines/first timers [vim-sensible](https://github.com/tpope/vim-sensible)
+  + sensible config for shared machines/first timers [vim-sensible](https://github.com/tpope/vim-sensible)
 + Good config files for starters
   + [Parham Alvani](https://github.com/1995parham/dotfiles/tree/master/nvim)
   + [Sajjad Heydari](https://github.com/MCSH/dot-files/blob/master/.config/nvim/init.vim)
