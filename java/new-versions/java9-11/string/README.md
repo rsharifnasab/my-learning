@@ -1,3 +1,0 @@
-# string methods
-
-String.repeat()
