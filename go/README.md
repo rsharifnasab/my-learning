@@ -14,7 +14,7 @@
 - go by example: handy and useful for learning a special concept [+](https://dlintw.github.io/gobyexample/public/#by-sequence)
 - effective go: documentation page about writing better go code [+](https://golang.org/doc/effective_go)
 - little go book [+](https://www.openmymind.net/The-Little-Go-Book/)
-- learn go with tests [+](https://www.openmymind.net/The-Little-Go-Book/)
+- learn go with tests [+](https://quii.gitbook.io/learn-go-with-tests/)
 
 ### Specific posts
 
