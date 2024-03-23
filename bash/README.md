@@ -1,4 +1,14 @@
-# learning bash scripting!
+# learning Bash (and Bash scripting)!
+
+
+- [A good bash online book](https://effective-shell.com/)
+- [Enough to be dangerous](https://www.learnenough.com/command-line-tutorial/basics)
+- [Formal intro to Bash (by TDLP)](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
+- [Art of command line](https://github.com/jlevy/the-art-of-command-line)
+- [Bash hackers wiki](https://wiki.bash-hackers.org/)
+- [Bash exit traps](http://redsymbol.net/articles/bash-exit-traps/)
+
+
 
 - [terminal guide to newcomers (DT)](https://youtu.be/s3ii48qYBxA)
 - [command line Crash Course](https://www.youtube.com/watch?v=yz7nYlnXLfE)
@@ -40,4 +50,3 @@
 - [bash best practices](https://bertvv.github.io/cheat-sheets/Bash.html)
 - [glob in bash](https://blog.robertelder.org/find-command-wildcard-globbing/)
 - [bash script rules](https://github.com/progrium/bashstyle)
-
