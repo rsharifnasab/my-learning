@@ -1,7 +1,5 @@
 # my journey of learning python!
-
 ## my resources
-+ mft! (physical class)
 + [sokan academy](https://sokanacademy.com/courses/python/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86)
 + [understand programming jadi](https://www.aparat.com/video/video/listuser/username/jadi/usercat/94189)
 
